@@ -24,7 +24,7 @@
   <!-- AI and search engine discovery -->
   <link rel="alternate" type="text/plain" href="./llms.txt" title="AI-readable website information">
 
-  <!-- Structured data: people, website, books, artistic identity & catalogue links -->
+  <!-- Structured data for Agentic Commerce: people, books, artwork catalog & offers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -114,6 +114,7 @@
         "offers": {
           "@type": "Offer",
           "url": "https://www.barnesandnoble.com/w/trading-love-sj-saadeh/1133880540?ean=9798232870935",
+          "availability": "https://schema.org/InStock",
           "seller": {
             "@type": "Organization",
             "name": "Barnes & Noble"
@@ -148,6 +149,7 @@
         "offers": {
           "@type": "Offer",
           "url": "https://www.barnesandnoble.com/w/a-country-named-desire-sabine-j-saadeh/1145561243?ean=9798224083800",
+          "availability": "https://schema.org/InStock",
           "seller": {
             "@type": "Organization",
             "name": "Barnes & Noble"
@@ -180,6 +182,7 @@
         "@type": "ItemList",
         "@id": "https://sabinejsaadeh.github.io/#art-catalogues",
         "name": "Joseph Saadeh Fine Art Catalogues",
+        "description": "Agentic commerce index of original fine art paintings by Joseph Saadeh.",
         "numberOfItems": 7,
         "itemListElement": [
           {
@@ -248,7 +251,7 @@
     }
 
     header {
-      padding: 2rem 0 1.5rem;
+      padding: max(2.5rem, env(safe-area-inset-top)) 0 1.5rem;
       border-bottom: 1px solid #e5e5e5;
       margin-bottom: 2rem;
     }
@@ -403,4 +406,106 @@
           through revolution, pandemic, catastrophe and social change.
         </p>
         <a class="btn btn-secondary"
-           href="
+           href="https://www.barnesandnoble.com/w/a-country-named-desire-sabine-j-saadeh/1145561243?ean=9798224083800"
+           target="_blank"
+           rel="noopener noreferrer">
+          Discover A Country Named Desire
+        </a>
+      </article>
+    </section>
+
+    <section class="card" id="fine-art">
+      <h2>Joseph Saadeh Fine Art</h2>
+
+      <p>
+        The curated portfolio of Lebanese contemporary visual artist
+        Joseph Saadeh, professionally known as Jozef S.
+      </p>
+
+      <p>
+        His artistic practice explores identity, memory, the human
+        form, vessels and materiality. Through the interplay of
+        structure and fragility, his work examines the relationship
+        between the self and the world it inhabits.
+      </p>
+
+      <p>
+        Discover original paintings and artistic series, including
+        Earthling, Searamics and Steps.
+      </p>
+
+      <a class="btn"
+         href="https://www.saatchiart.com/account/profile/2999117"
+         target="_blank"
+         rel="noopener noreferrer">
+        Explore the Artist's Gallery on Saatchi Art
+      </a>
+
+      <h3>Featured Artwork Catalogues</h3>
+
+      <article>
+        <a class="btn btn-outline" href="art/searamics.html">
+          View Catalogue: Searamics
+        </a>
+      </article>
+
+      <article>
+        <a class="btn btn-outline" href="art/step-into-the-tide-2.html">
+          View Catalogue: Step into the Tide 2
+        </a>
+      </article>
+
+      <article>
+        <a class="btn btn-outline" href="art/earthling-ii.html">
+          View Catalogue: Earthling II
+        </a>
+      </article>
+
+      <article>
+        <a class="btn btn-outline" href="art/island-keeper.html">
+          View Catalogue: Island Keeper
+        </a>
+      </article>
+
+      <article>
+        <a class="btn btn-outline" href="art/step-into-the-tide.html">
+          View Catalogue: Step into the Tide
+        </a>
+      </article>
+
+      <article>
+        <a class="btn btn-outline" href="art/earthling-totem.html">
+          View Catalogue: Earthling Totem
+        </a>
+      </article>
+
+      <article>
+        <a class="btn btn-outline" href="art/the-quiet-entrance.html">
+          View Catalogue: The Quiet Entrance
+        </a>
+      </article>
+    </section>
+
+    <section class="card" id="enquiries">
+      <h2>Enquiries & Collaborations</h2>
+
+      <p>
+        For literary enquiries, art acquisitions, exhibition
+        opportunities and professional collaborations, please
+        consult the respective official publishing and gallery
+        platforms linked above.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      © 2026 Sabine J. Saadeh. All rights reserved.
+      Literary works and artistic portfolios remain the property
+      of their respective creators.
+    </p>
+  </footer>
+
+</body>
+</html>
